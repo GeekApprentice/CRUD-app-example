@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-const API = axios.create({baseURL: 'http://localhost:5000' })
+const API = axios.create({baseURL: '/api' })
 
 //send token back to middleware for verification and authorization
 API.interceptors.request.use((req) => {
