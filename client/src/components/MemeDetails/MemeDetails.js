@@ -21,7 +21,7 @@ const PostDetails = () => {
 
   useEffect(() => {
     if(post) {
-      dispatch(getPostBySearch({search: 'none', tags: post?.tags.join(',')}))
+      dispatch(getPostBySearch({search: 'none', tags: post?.tags?.join(',')}))
     }
   }, [post])
 
