@@ -10,7 +10,7 @@ import memories from '../../images/laughing.webp'
 const Navbar = () => {
     const classes= useStyles()
     const [user, setUser] = useState(JSON.parse(localStorage.getItem('profile')))//getting the user from localstorage
-    console.log(user);
+    //console.log(user);
     const dispatch = useDispatch()
     const history = useHistory()
     const location = useLocation()
